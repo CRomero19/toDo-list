@@ -1,0 +1,21 @@
+@import './reset.css';
+
+.todo-page{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../assets/bcg.jpg) ;
+}
+
+.container__main{
+    border: 10px solid white;
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}

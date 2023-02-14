@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { TodosContext } from "../../Context/todos"
+import { StyledInputTodo } from "./style";
 
 function NewTodoForm() {
     const [task, setTask] = useState("");
@@ -12,7 +13,7 @@ function NewTodoForm() {
         }
 
     return (
-        <form onSubmit={handleSaveNewTask}>
+        <StyledInputTodo onSubmit={handleSaveNewTask}>
             <input 
                 type="text"
                 placeholder="Exemplo: Estudar"
@@ -21,7 +22,7 @@ function NewTodoForm() {
             />
 
             <button type="submit">Criar nova tarefa</button>
-        </form>
+        </StyledInputTodo>
     )
 }
 

@@ -13,7 +13,6 @@ export const TodosProvider = ({ children }) => {
             task: task,
             completed: false
         };
-
         setTodos(oldTodos => [...oldTodos, newTodo]);
     }
 
